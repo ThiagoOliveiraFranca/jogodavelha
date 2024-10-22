@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/javascript.js"></script>
+</head>
+<body>
+
+    <h1 id="jogador_vez">Vez: Jogador 1</h1>
+    <div class="box">
+        <div id="l1">
+            <div class="quadrado" id="1">
+                <button onclick="jogada(1)" type="button"></button>
+            </div>
+            <div class="quadrado" id="quatro">
+                <button onclick="jogada('quatro')" type="button"></button>
+            </div>
+            <div class="quadrado" id="sete">
+                <button onclick="jogada('sete')" type="button"></button>
+            </div>            
+        </div> 
+        <div id="l2"> 
+            <div class="quadrado" id="2">
+                <button onclick="jogada(2)" type="button"></button>
+            </div>
+            <div class="quadrado" id="cinco">
+                <button onclick="jogada('cinco')" type="button"></button>
+            </div>
+            <div class="quadrado" id="oito">
+                <button onclick="jogada('oito')" type="button"></button></div>
+
+        </div> 
+        <div id="l3"> 
+            <div class="quadrado" id="3"><button onclick="jogada(3)" type="button"></button></div>
+            <div class="quadrado" id="seis"><button onclick="jogada('seis')" type="button"></button></div>
+            <div class="quadrado" id="nove"><button onclick="jogada('nove')" type="button"></button></div>
+        </div>
+    </div>
+     
+</body>
+</html>

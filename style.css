@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+
+#l1, #l2 {
+        border-right: 2px solid;
+        
+}
+
+
+body {
+    display: grid;
+    justify-content: center;
+    height: 100dvh;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+}
+
+.quadrado {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quatro, #sete, #cinco, #oito,#seis, #nove {
+        border-top: 2px solid;
+}
+
+.quadrado button {
+
+    text-decoration: none;
+    border: 0px;
+    background-color: white;
+    background-color: aqua;
+    padding: 50px;
+    margin: 0;
+}
+
+
+
