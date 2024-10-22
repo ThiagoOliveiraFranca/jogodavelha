@@ -38,7 +38,7 @@ function verificarVencedor() {
     if (
         (checkCels(1, 2, 3)) || (checkCels('quatro', 'cinco', 'seis')) || (checkCels('sete', 'oito', 'nove')) || 
         (checkCels(1,'quatro','sete')) || (checkCels(2,'cinco','oito')) || (checkCels(3,'seis','nove')) ||
-        (checkCels(1,'cinco','nove')) || (checkCels ('sete','cinco',3))
+        (checkCels(1,'cinco','nove')) || (checkCels ('sete','cinco',3)) 
         
     ) {
         return true
@@ -54,5 +54,5 @@ function checkCels(c1, c2, c3) {
     const cel3 = document.getElementById(c3).textContent;
 
     // Verifica se as três células são iguais e diferentes de "1" (inicial)
-    return (cel1 === cel2 && cel2 === cel3 && cel1 !== "");
+    return (cel1 === cel2 && cel2 === cel3 && cel1 !== "" && cel2 !== "" && cel3 !== "");
 }
