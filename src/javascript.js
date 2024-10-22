@@ -12,6 +12,7 @@ function jogada(id) {
         }
         if (verificarVencedor()) {
             alert("Temos um vencedor!");
+            resetar()
         }
         contador += 1;  // Incrementa o contador
     }
@@ -24,11 +25,38 @@ function jogada(id) {
     // Verifica se já temos pelo menos 5 jogadas (número mínimo para vitória)
     if (contador > 5) {
         verificarVencedor();
-    }
-    else if(contador === 9) {
-        alert("empate")
+        if(contador > 8) {
+            alert("empate")
+            return resetar()
+        }
+        
     }
 }
+
+function resetar() {
+    var res1 = document.getElementById(1);
+    res1.textContent = "";
+
+    var res1 = document.getElementById(2);
+    res1.textContent = "";
+    var res1 = document.getElementById(3);
+    res1.textContent = "";
+    var res1 = document.getElementById('quatro');
+    res1.textContent = "";
+    var res1 = document.getElementById('cinco');
+    res1.textContent = "";
+    var res1 = document.getElementById('seis');
+    res1.textContent = "";
+    var res1 = document.getElementById('sete');
+    res1.textContent = "";
+    var res1 = document.getElementById('oito');
+    res1.textContent = "";
+    var res1 = document.getElementById('nove');
+    res1.textContent = "";
+    contador = 0;
+    jogador.textContent = "Vez: Jogador 1"
+}
+
 
 
 
@@ -38,7 +66,7 @@ function verificarVencedor() {
     if (
         (checkCels(1, 2, 3)) || (checkCels('quatro', 'cinco', 'seis')) || (checkCels('sete', 'oito', 'nove')) || 
         (checkCels(1,'quatro','sete')) || (checkCels(2,'cinco','oito')) || (checkCels(3,'seis','nove')) ||
-        (checkCels(1,'cinco','nove')) || (checkCels ('sete','cinco',3)) 
+        (checkCels(1,'cinco','nove')) || (checkCels ('sete','cinco',3))
         
     ) {
         return true
