@@ -12,33 +12,28 @@
     <h1 id="jogador_vez">Vez: Jogador 1</h1>
     <div class="box">
         <div id="l1">
-            <div class="quadrado" id="1">
-                <button onclick="jogada(1)" type="button"></button>
+            <div class="quadrado" id="1" onclick="jogada(1)">
             </div>
-            <div class="quadrado" id="quatro">
-                <button onclick="jogada('quatro')" type="button"></button>
-            </div>
-            <div class="quadrado" id="sete">
-                <button onclick="jogada('sete')" type="button"></button>
-            </div>            
+            <div class="quadrado" id="quatro" onclick="jogada('quatro')"></div>
+            
+            <div class="quadrado" id="sete" onclick="jogada('sete')"></div>            
         </div> 
         <div id="l2"> 
-            <div class="quadrado" id="2">
-                <button onclick="jogada(2)" type="button"></button>
+            <div class="quadrado" id="2" onclick="jogada(2)">
             </div>
-            <div class="quadrado" id="cinco">
-                <button onclick="jogada('cinco')" type="button"></button>
+            <div class="quadrado" id="cinco" onclick="jogada('cinco')" >
             </div>
-            <div class="quadrado" id="oito">
-                <button onclick="jogada('oito')" type="button"></button></div>
+            <div class="quadrado" id="oito" onclick="jogada('oito')"></div>
 
         </div> 
         <div id="l3"> 
-            <div class="quadrado" id="3"><button onclick="jogada(3)" type="button"></button></div>
-            <div class="quadrado" id="seis"><button onclick="jogada('seis')" type="button"></button></div>
-            <div class="quadrado" id="nove"><button onclick="jogada('nove')" type="button"></button></div>
+            <div class="quadrado" id="3" onclick="jogada(3)"></div>
+            <div class="quadrado" id="seis" onclick="jogada('seis')"></div>
+            <div class="quadrado" id="nove" onclick="jogada('nove')" ></div>
         </div>
     </div>
+
+    <button onclick="resetar()" type="reset">Resetar</button>
      
 </body>
 </html>
